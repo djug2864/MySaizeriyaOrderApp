@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/background_color"
+    android:padding="16dp">
+
+    <!-- カメラプレビュー用のビュー（例: ZXingやML Kitを使用する場合） -->
+    <!-- ここではプレースホルダーとしてフレームを表示 -->
+    <FrameLayout
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:background="#333333" />
+
+    <!-- エラーメッセージ（URLが違うときに表示） -->
+    <TextView
+        android:id="@+id/tvErrorMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:textColor="#E53935"
+        android:textSize="16sp"
+        android:visibility="gone" />
+
+</LinearLayout>
